@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="John Asega Noel — Educator, TVET practitioner, IT & web designer, mobile phone repairer and digital skills trainer.">
+<title>John Asega Noel | Education • Technology • Practical Skills</title>
+<style>
+:root{--bg:#07110d;--panel:#0d1b15;--panel2:#11251c;--text:#f4f7f5;--muted:#a9b8b0;--green:#35d07f;--red:#ff5d5d;--line:#20382d;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,13,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;letter-spacing:.06em}.logo span{color:var(--green)}
+.navlinks{display:flex;gap:22px;font-size:.92rem;color:var(--muted)}.navlinks a:hover{color:var(--green)}
+.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 11px;border-radius:8px}
+.hero{padding:105px 0 85px;background:radial-gradient(circle at 80% 20%,#17472d 0,transparent 35%),linear-gradient(135deg,#07110d,#0b1913)}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
+.kicker{color:var(--green);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.8rem,6vw,5.7rem);line-height:.98;margin:18px 0 25px;letter-spacing:-.055em}
+h1 em{font-style:normal;color:var(--green)}.lead{font-size:1.18rem;color:var(--muted);max-width:700px}
+.ctas{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 20px;border-radius:10px;font-weight:800;border:1px solid var(--line);display:inline-block}
+.primary{background:var(--green);color:#06110b;border-color:var(--green)}.secondary:hover{border-color:var(--green);color:var(--green)}
+.hero-card{background:linear-gradient(145deg,#153a28,#0c1b14);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(145deg,#35d07f,#173e2b);display:grid;place-items:center;font-size:2.5rem;font-weight:900;margin-bottom:25px}
+.hero-card h3{font-size:1.35rem;margin-bottom:8px}.hero-card p{color:var(--muted)}
+section{padding:88px 0;border-bottom:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:45px}
+h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;margin:12px 0}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:27px}.card h3{margin:12px 0 8px}.card p{color:var(--muted)}.icon{font-size:1.8rem}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:9px 13px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;color:#dce8e1}
+.project{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:18px}
+.project-art{min-height:260px;background:linear-gradient(135deg,#153b29,#09130f);display:flex;align-items:center;justify-content:center;font-size:4rem}.project-copy{padding:30px}.project-copy p{color:var(--muted);margin:12px 0 18px}
+.timeline{border-left:2px solid var(--green);padding-left:25px}.item{margin-bottom:30px}.item strong{color:var(--green)}
+.quote{font-size:1.4rem;border-left:4px solid var(--green);padding:20px 25px;background:var(--panel);border-radius:0 14px 14px 0;color:#dce8e1}
+.contact{background:linear-gradient(135deg,#123523,#0a1711)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact p{color:var(--muted);margin:14px 0}.contact-list{display:grid;gap:12px}.contact-list a{padding:14px 16px;background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:10px}
+footer{padding:35px 0;color:var(--muted);text-align:center;font-size:.9rem}
+@media(max-width:800px){.grid,.contact-grid,.project{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.navlinks{display:none}.menu{display:block}.navlinks.open{display:flex;position:absolute;top:72px;left:0;right:0;padding:20px;background:#07110d;flex-direction:column}.hero{padding-top:70px}h1{font-size:3.2rem}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="logo" href="#home">JOHN <span>ASEGA</span> NOEL</a>
+<button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button>
+<div class="navlinks">
+<a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<header class="hero" id="home"><div class="container grid">
+<div>
+<div class="kicker">Education • Technology • Practical Skills</div>
+<h1>I help people turn <em>knowledge into solutions.</em></h1>
+<p class="lead">I am John Asega Noel — an educator, TVET practitioner, IT & web designer, digital skills trainer and mobile phone repairer focused on practical learning, problem-solving and community impact.</p>
+<div class="ctas"><a class="btn primary" href="#contact">Work With Me</a><a class="btn secondary" href="#work">View My Work</a></div>
+</div>
+<div class="hero-card"><div class="avatar">JAN</div><h3>Learn. Build. Repair. Solve. Create Impact.</h3><p>My work connects education, technology, practical skills, entrepreneurship and community development.</p></div>
+</div></header>
+
+<section id="about"><div class="container">
+<div class="section-head"><div class="kicker">About me</div><h2>Not just certificates. Practical capability.</h2><p>I believe education becomes more powerful when people can apply what they learn to real-world problems. My personal brand sits at the intersection of education, technology, practical skills and community development.</p></div>
+<div class="quote">“Don't just consume what already exists. Understand it, identify the gaps, develop skills, and create solutions.”</div>
+</div></section>
+
+<section id="services"><div class="container">
+<div class="section-head"><div class="kicker">What I do</div><h2>Skills you can hire me for.</h2><p>Practical services and training built around solving specific problems.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🎓</div><h3>Education & Training</h3><p>Digital literacy, practical learning, skills development and educational support designed to connect knowledge with application.</p></div>
+<div class="card"><div class="icon">💻</div><h3>IT & Web Design</h3><p>Website design, management and digital solutions for individuals, small businesses and organizations.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Digital Skills</h3><p>Training in productivity tools, internet research, Google Workspace, social media workflows and practical digital literacy.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Mobile Phone Repair</h3><p>Fault diagnosis, troubleshooting and practical phone repair knowledge, with an emphasis on repair before replacement.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>TVET & Practical Skills</h3><p>Hands-on skills development that helps learners move from knowing something to being able to do something.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>Digital & Business Growth</h3><p>Support around digital presence, online visibility, content systems and technology-enabled opportunities.</p></div>
+</div></div></section>
+
+<section id="work"><div class="container">
+<div class="section-head"><div class="kicker">Selected work</div><h2>Projects that show how I think.</h2><p>Use these case-study cards as the foundation for adding screenshots, links, outcomes and client proof.</p></div>
+<div class="project"><div class="project-art">🌐</div><div class="project-copy"><h3>Personal Portfolio & Web Projects</h3><p>Building web experiences and digital identities that make people, businesses and organizations easier to discover online.</p><span class="tag">Web Design</span> <span class="tag">Digital Presence</span></div></div>
+<div class="project"><div class="project-art">🎓</div><div class="project-copy"><h3>Digital Skills & Practical Training</h3><p>Training initiatives around basic ICT, digital literacy, productivity tools, computer maintenance, phone repair and practical technology skills.</p><span class="tag">Training</span> <span class="tag">TVET</span></div></div>
+<div class="project"><div class="project-art">🔧</div><div class="project-copy"><h3>Repair Culture & Community Skills</h3><p>Promoting repair as a technical skill, an economic opportunity and a practical response to electronic waste.</p><span class="tag">Repair</span> <span class="tag">Community</span></div></div>
+<div class="project"><div class="project-art">📣</div><div class="project-copy"><h3>ASEGA MEDIA</h3><p>A professional digital marketing brand built around <strong>Visibility & Clarity</strong> — helping businesses, institutions, organizations and individuals strengthen their digital presence.</p><span class="tag">Digital Marketing</span> <span class="tag">Visibility & Clarity</span></div></div>
+</div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head"><div class="kicker">Capabilities</div><h2>A multidisciplinary toolkit.</h2><p>The combination is the advantage: education + technology + practical troubleshooting + communication.</p></div>
+<div class="skills">
+<span class="tag">Education</span><span class="tag">TVET</span><span class="tag">Digital Literacy</span><span class="tag">IT Support</span><span class="tag">Web Design</span><span class="tag">WordPress</span><span class="tag">Mobile Phone Repair</span><span class="tag">Computer Repair & Maintenance</span><span class="tag">Social Media Management</span><span class="tag">Digital Marketing</span><span class="tag">Content Strategy</span><span class="tag">SEO</span><span class="tag">Google Workspace</span><span class="tag">AI Tools</span><span class="tag">Practical Skills Training</span><span class="tag">Community Development</span>
+</div></div></section>
+
+<section><div class="container">
+<div class="section-head"><div class="kicker">Journey</div><h2>Learning by doing.</h2></div>
+<div class="timeline">
+<div class="item"><strong>Education</strong><p>Diploma in Education, with a continuing focus on practical and skills-based learning.</p></div>
+<div class="item"><strong>Technology</strong><p>Hands-on work across IT, web design, digital tools, troubleshooting and technology training.</p></div>
+<div class="item"><strong>Repair</strong><p>Practical experience in mobile phone repair and electronics-focused problem solving.</p></div>
+<div class="item"><strong>Digital entrepreneurship</strong><p>Building personal and business digital brands, including ASEGA MEDIA and technology-enabled service ideas.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container contact-grid">
+<div><div class="kicker">Let's work</div><h2>Have a problem worth solving?</h2><p>Tell me what you are trying to build, repair, learn or improve. I am open to training, digital projects, web work, technology support and practical skills collaborations.</p><div class="ctas"><a class="btn primary" href="https://wa.me/211929188092">WhatsApp Me</a><a class="btn secondary" href="mailto:asegamedia@gmail.com">Email Me</a></div></div>
+<div class="contact-list">
+<a href="mailto:asegamedia@gmail.com">✉️ asegamedia@gmail.com</a>
+<a href="https://wa.me/211929188092">💬 WhatsApp: +211 929 188 092</a>
+<a href="tel:+211928219471">☎️ Tel: +211 928 219 471</a>
+<a href="#">📍 Yei River County, South Sudan</a>
+</div></div></section>
+
+<footer><div class="container">© <span id="year"></span> John Asega Noel. Learn. Build. Repair. Solve. Create Impact.<br><br>ASEGA MEDIA — Visibility & Clarity</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
